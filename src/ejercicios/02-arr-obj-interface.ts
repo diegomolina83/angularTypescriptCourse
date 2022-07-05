@@ -4,19 +4,17 @@
 
 let habilidades: string[] = ['Bash', 'Counter', 'Healing'];
 
-interface Personaje {
+export interface Personaje {
     nombre: string,
     hp: number,
     habilidades: string[],
-    puebloNatal: string
+    puebloNatal: string,
+    mostrarHp: () => void;
 }
 
-const personaje: Personaje = {
-    nombre: 'Diego',
-    hp: 100,
-    habilidades: ['Bash', 'Counter', 'Healing'],
-    puebloNatal: "Alcala del jucar"
-}
-
-console.log(personaje)
-console.table(personaje);
+// const personaje: Personaje = {
+//     nombre: 'Diego',
+//     hp: 100,
+//     habilidades: ['Bash', 'Counter', 'Healing'],
+//     puebloNatal: "Alcala del jucar"
+// }
